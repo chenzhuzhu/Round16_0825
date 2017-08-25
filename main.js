@@ -11,12 +11,9 @@ function chooseOne(arr,ele){
         if(ele==item){
             let thisIndex = arr.indexOf(item)
             arr.splice(thisIndex,1)
-            count++;
+            arr.push(ele)
         }
     })
-    for(let i=0;i<count;i++){
-        arr.push(ele)
-    }
     console.log(arr)
 
 }
